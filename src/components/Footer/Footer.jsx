@@ -1,8 +1,10 @@
+
 const Footer = () => {
   return (
-    <div>
-      
-    </div>
+    <footer>
+        <div className="footer__logo">Logo KASA</div>
+        <p className="footer__text">C 2020 Kasa. All rights reserved</p>
+      </footer>
   );
 };
 
