@@ -1,8 +1,8 @@
+import Banner from "../../components/Banner/Banner";
+
 const About = () => {
   return (
-    <div className="about-container">
-      <div className="about__img"></div>
-    </div>
+    <Banner />
   );
 };
 

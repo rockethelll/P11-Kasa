@@ -1,14 +1,8 @@
-.header__wrapper {
+header {
   display: flex;
-  justify-content: center;
-
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 40px 0;
-    width: 1240px;
-  }
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 100px;
 
   a {
     margin-left: 60px;

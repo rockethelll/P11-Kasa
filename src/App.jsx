@@ -1,10 +1,5 @@
-
 const App = () => {
-  return (
-    <>
-    TEST
-    </>
-  );
-}
+  return <>TEST</>;
+};
 
 export default App;
