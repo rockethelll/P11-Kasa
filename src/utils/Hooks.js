@@ -8,9 +8,11 @@ const useFetch = (url) => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         setData(data);
         setLoading(false);
-      });
+      })
+      .catch((err) => console.log('Something went wrong: ',err));
   }, [url]);
 
   return { data, loading };

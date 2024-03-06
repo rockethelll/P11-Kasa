@@ -14,7 +14,9 @@ Banner.propTypes = {
   text: PropTypes.string,
   filter: PropTypes.string
 };
+
 Banner.defaultProps = {
   filter: 'brightness(0.6)'
 };
+
 export default Banner;
