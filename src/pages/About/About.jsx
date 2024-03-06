@@ -1,9 +1,7 @@
-import Banner from "../../components/Banner/Banner";
+import Banner from '../../components/Banner/Banner';
 
 const About = () => {
-  return (
-    <Banner />
-  );
+  return <Banner image='../images/montagne.webp'/>;
 };
 
 export default About;
