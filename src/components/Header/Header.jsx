@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
 
 const Header = () => {
   return (
@@ -6,10 +6,7 @@ const Header = () => {
       <div className="logo">
         <img src="../images/Logo_couleur.png" alt="Logo Kasa" />
       </div>
-      <nav>
-        <NavLink to="/">Accueil</NavLink>
-        <NavLink to="about">À propos</NavLink>
-      </nav>
+      <Navbar />
     </header>
   );
 };
