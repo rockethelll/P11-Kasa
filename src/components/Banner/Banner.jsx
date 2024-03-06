@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Banner = ({ image, text}) => {
+const Banner = ({ image, text }) => {
   return (
     <div className="banner-container">
       <img src={image} alt="Banner" />
@@ -11,6 +11,6 @@ const Banner = ({ image, text}) => {
 
 Banner.propTypes = {
   image: PropTypes.string.isRequired,
-  text: PropTypes.string,
+  text: PropTypes.string
 };
 export default Banner;
