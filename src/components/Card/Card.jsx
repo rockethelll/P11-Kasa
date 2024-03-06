@@ -12,7 +12,7 @@ const Card = ({ id, title, cover }) => {
 Card.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  cover: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired
 };
 
 export default Card;
