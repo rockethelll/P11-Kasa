@@ -13,8 +13,10 @@ const LogementInfo = ({ logement }) => {
         </div>
       </div>
       <h3>{logement.location}</h3>
-      <Tags tags={logement.tags} />
-      <RatingStar star={logement.rating} />
+      <div className="tags-stars">
+        <Tags tags={logement.tags} />
+        <RatingStar star={logement.rating} />
+      </div>
     </div>
   );
 };
@@ -26,7 +28,7 @@ LogementInfo.propTypes = {
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     host: PropTypes.arrayOf(PropTypes.string).isRequired,
     rating: PropTypes.number.isRequired
-  }).isRequired,
+  }).isRequired
 };
 
 export default LogementInfo;

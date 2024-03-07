@@ -1,12 +1,21 @@
 import PropTypes from 'prop-types';
+import greyStar from '../../assets/star-solid-grey.svg';
+import primaryStar from '../../assets/star-solid-primary.svg';
 
 const RatingStar = ({ star }) => {
+  const totalStars = 5;
+
   return (
-    <>
-      <div>{star}</div>
-      <img src="../images/star-solid-primary.svg" alt="" />
-      <img src="../images/star-solid-grey.svg" alt="" />
-    </>
+    <div className="stars-container">
+      {[...Array(totalStars)].map((_, index) => (
+        <img
+          key={index}
+          src={index < star ? primaryStar : greyStar}
+          alt={index < star ? 'Red Star' : 'Grey Star'}
+          className="star"
+        />
+      ))}
+    </div>
   );
 };
 
