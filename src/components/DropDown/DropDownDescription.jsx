@@ -6,8 +6,7 @@ import ChevronUp from '../../assets/chevron-up-solid.svg';
 const DropDownDescription = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
-    setIsOpen(isOpen => !isOpen)
-    
+    setIsOpen((isOpen) => !isOpen);
   };
 
   return (
@@ -15,20 +14,14 @@ const DropDownDescription = ({ title, content }) => {
       <div className="dropdown-title">
         <p>{title}</p>
         {isOpen ? (
-          <img
-            src={ChevronDown}
-            alt="chevron-down"
-            onClick={() => toggle()}
-          />
+          <img src={ChevronDown} alt="chevron-down" onClick={() => toggle()} />
         ) : (
-          <img
-            src={ChevronUp}
-            alt="chevron-up"
-            onClick={() => toggle()}
-          />
+          <img src={ChevronUp} alt="chevron-up" onClick={() => toggle()} />
         )}
       </div>
-      <div className={`dropdown-content ${isOpen ? 'open' : ''}`}>{content}</div>
+      <div className={`dropdown-content ${isOpen ? 'open' : ''}`}>
+        {content}
+      </div>
     </div>
   );
 };

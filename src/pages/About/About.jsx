@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <Banner image="../images/montagne.webp" />
-      <div className='about-dropdown'>
+      <div className="about-dropdown">
         {aboutList.map((about, index) => (
           <DropDownDescription
             key={index}
