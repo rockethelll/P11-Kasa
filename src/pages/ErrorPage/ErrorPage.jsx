@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header';
 
 const ErrorPage = () => {
   return (
-    <>
+    <div className='error404'>
       <Header />
       <div className="container">
         <p className="num-error">404</p>
@@ -16,7 +16,7 @@ const ErrorPage = () => {
         </Link>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

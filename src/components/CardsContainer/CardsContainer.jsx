@@ -11,11 +11,7 @@ const CardsContainer = () => {
       {!loading &&
         data.map((card) => (
           <Link to={`/logement/${card.id}`} key={card.id}>
-            <Card
-              id={card.id}
-              title={card.title}
-              cover={card.cover}
-            />
+            <Card id={card.id} title={card.title} cover={card.cover} />
           </Link>
         ))}
     </div>
