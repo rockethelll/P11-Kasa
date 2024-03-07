@@ -26,8 +26,11 @@ LogementInfo.propTypes = {
     title: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
-    host: PropTypes.arrayOf(PropTypes.string).isRequired,
-    rating: PropTypes.number.isRequired
+    host: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      picture: PropTypes.string.isRequired
+    }).isRequired,
+    rating: PropTypes.string.isRequired
   }).isRequired
 };
 

@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import Carousel from '../../components/Carousel/Carousel';
+import DropDownDescription from '../../components/DropDown/DropDownDescription';
 import LogementInfo from '../../components/LogementInfos/LogementInfo';
 import { useFetchLogement } from '../../utils/Hooks';
 
@@ -13,6 +14,10 @@ const Logement = () => {
     <>
       <Carousel images={logement.pictures} />
       <LogementInfo logement={logement} />
+      <DropDownDescription
+        title={'Description'}
+        content={logement.description}
+      />
     </>
   );
 };

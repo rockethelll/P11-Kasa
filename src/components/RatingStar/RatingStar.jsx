@@ -20,6 +20,6 @@ const RatingStar = ({ star }) => {
 };
 
 RatingStar.propTypes = {
-  star: PropTypes.number.isRequired
+  star: PropTypes.string.isRequired
 };
 export default RatingStar;
