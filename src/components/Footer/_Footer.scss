@@ -1,0 +1,29 @@
+@use '../../assets/style/variables' as *;
+
+footer {
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $black;
+  color: $white;
+}
+
+.footer__logo {
+  margin-top: 64px;
+}
+
+.footer__text {
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+@media screen and (max-width: 425px) {
+  .footer__text {
+    font-size: 12px;
+    width: 135px;
+    text-align: center;
+    margin: 20px 0 60px;
+  }
+}

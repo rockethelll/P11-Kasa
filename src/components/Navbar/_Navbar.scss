@@ -1,0 +1,35 @@
+@use '../../assets/style/variables' as *;
+
+nav a {
+  text-decoration: none;
+  color: $black;
+  font-size: 24px;
+  &.active {
+    text-decoration: underline;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &:last-child {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav a {
+    font-size: 18px;
+
+    &:last-child {
+      margin-left: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav a {
+    font-size: 12px;
+    &:last-child {
+      margin-left: 16px;
+    }
+  }
+}

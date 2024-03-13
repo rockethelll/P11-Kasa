@@ -1,0 +1,46 @@
+@use '../../assets/style/variables' as *;
+.dropdown-container {
+  margin-bottom: 32px;
+  width: 580px;
+
+  li {
+    list-style: none;
+    margin-bottom: 16px;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+.dropdown-title {
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 20px 10px 15px;
+
+  p {
+    color: $white;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+}
+
+.dropdown-content {
+  font-size: 18px;
+  width: 580px;
+  background-color: $secondary-color;
+  padding: 16px 20px;
+  display: none;
+}
+.dropdown-content.open {
+  display: block;
+}

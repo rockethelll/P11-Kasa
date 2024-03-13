@@ -1,0 +1,24 @@
+.star {
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stars-container {
+    height: 18px;
+  }
+
+  .tag {
+    font-size: 12px;
+  }
+
+  .star {
+    width: 20px;
+    height: 20px;
+  }
+}

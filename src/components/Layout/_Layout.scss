@@ -1,0 +1,19 @@
+.outlet {
+  width: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 1320px) {
+  .outlet {
+    width: calc(100% - 80px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .outlet {
+    width: calc(100% - 30px);
+  }
+}

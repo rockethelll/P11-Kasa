@@ -1,0 +1,61 @@
+@use '../../assets/style/variables.scss' as *;
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 415px;
+
+  .carousel-img {
+    display: flex;
+    justify-content: center;
+
+    .slide {
+      width: 100%;
+      border-radius: 25px;
+      object-fit: cover;
+    }
+  }
+
+  button {
+    border: none;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: transparent;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+      width: 45px;
+      height: 80px;
+    }
+  }
+
+  .prev-slide {
+    left: 0;
+  }
+
+  .next-slide {
+    right: 0;
+  }
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.indicator {
+  position: absolute;
+  bottom: 10px;
+  color: $white;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    height: 255px;
+  }
+}
